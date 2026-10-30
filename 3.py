@@ -14,13 +14,9 @@ while True:
             while debt > 0:
                 debt = debt * (1 + p / 100)
                 debt = debt - r
-                years += 1
-                if years > 100:
-                    break
+                years += 1                
             if debt <= 0:
                 print(f"\nВывод: Предприниматель сможет погасить кредит за {years} лет.")
                 print(f"Остаток после погашения: {abs(debt):.2f} руб.")
-            else:
-                print("\nВывод: За 100 лет кредит погасить не удалось (слишком медленное погашение).")
     except ValueError:
         print("Ошибка: введите корректные числовые значения.")

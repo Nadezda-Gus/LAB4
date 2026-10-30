@@ -18,11 +18,10 @@ while True:
                 n += 1
                 term = term * x * (n - 1) / n
             right_part = -s
-            print("-" * 40)
+            print(" ")
             print(f"Левая часть (math.log): {left_part:.6f}")
             print(f"Правая часть (сумма ряда): {right_part:.6f}")
             print(f"Разница (погрешность): {abs(left_part - right_part):.6f}")
             print(f"Количество итераций (n): {n - 1}")
-            print("-" * 40)
     except ValueError:
         print("Ошибка: введите корректные числовые значения.")
